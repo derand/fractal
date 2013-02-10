@@ -81,7 +81,7 @@ class ThreadClass(threading.Thread):
 				#image.putpixel((x, y), (256 - i % 4 * 64, 256 - i % 8 * 32, 256 - (int)(math.sqrt(x*y))%256))
 
 		if text != None:
-			font = ImageFont.truetype("/home/maliy/.fonts/from_mac/Verdana.ttf", 14)
+			font = ImageFont.truetype("Verdana.ttf", 14)
 			draw = ImageDraw.Draw(image)
 			draw.text((0, 0), text, (120, 20, 20), font=font)
 
